@@ -72,6 +72,9 @@
               <!-- Website -->
               <a class="button button-default" href="https://jshmnrd.ca" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Web">My Website</a>
 
+              <!-- Bésa Wiki -->
+              <a class="button button-default" href="https://besa.jshmnrd.ca" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="https://pub.jshmnrd.ca/besa/flag/other/goldRing_official.svg" alt="Web">Bésa Wiki</a>
+
               <!-- RSS Subscribe-->
               <a class="button button-default" href="https://jshmnrd.ca/feed/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-rss.svg" alt="RSS Icon">RSS Subscribe</a>
 
@@ -113,6 +116,22 @@
       <footer>
         <!-- mask gif -->
         <center><img src="https://pub.jshmnrd.ca/logo/taro-transparent.gif" onclick="alert('Don’t touch my mask, thanks.')" height="70px" width="70px" /></center>
+        <a rel="me" href="https://mstdn.ca/@jshmnrd"></a>
+        <script>
+function updateClock() {
+  const now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+
+  document.getElementById("clock").innerHTML = hours + ":" + minutes;
+}
+
+setInterval(updateClock, 1000);
+</script>
+        <center><span id="clock"></span></center>
       </footer>
     
     </div>
